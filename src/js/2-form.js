@@ -25,7 +25,7 @@ const submitData = event => {
     event.preventDefault();
     const parseData = JSON.parse(localStorage.getItem("feedback-form-state") ||'{}');
     if(!parseData.email || !parseData.message) {
-        alert("You need to fill all the fields!")
+        alert("You need to fill all the fields")
     } else {
         console.log(formData);
         localStorage.removeItem("feedback-form-state");
